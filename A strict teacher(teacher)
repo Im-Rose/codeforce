@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;cin>>t;
+    while(t--)
+    {
+    long long int  n,m,q; long long int ans=0,a,b,c,p,s;
+    cin>>n>>m>>q;
+    long long int  m1,m2,d;
+    cin>>m1>>m2>>d;
+    a = max(m1, m2);
+    b = min(m1, m2);
+    if( d > a){
+        ans = n - a;
+    }
+    else if( d < b){
+        ans = b - 1;
+    }
+    else{
+          ans=( ( a + b) /2 ) - b; 
+    } 
+    cout << ans << endl;
+    }
+}
